@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music - Spencer Holland</title>
+  <meta name="description" content="Listen to Spencer Holland's music on Spotify, Apple Music, Tidal, YouTube, Amazon Music, and Pandora." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-left">
+      <a href="music.html">Music</a>
+      <a href="shows.html">Shows</a>
+    </div>
+    <a href="index.html" class="nav-logo">SH</a>
+    <div class="nav-right">
+      <a href="merch.html">Merch</a>
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+
+  <!-- Full page hero with glass card -->
+  <main class="page-hero">
+    <div class="page-hero-bg"></div>
+    
+    <div class="glass-card" style="position:relative;z-index:1;">
+      <h1 class="music-page-title">MUSIC</h1>
+      <p class="music-page-subtitle">Spencer's music is available on all of your favorite streaming platforms.</p>
+
+      <div class="streaming-buttons">
+        <!-- Spotify -->
+        <a href="https://open.spotify.com/artist/4dUAs3uoXz2swQ2DcMLIQ1?si=5pSe6ibcTd2OE67i1W23yg" target="_blank" rel="noopener" class="stream-btn">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+          </svg>
+          Spotify
+        </a>
+
+        <!-- Apple Music -->
+        <a href="https://music.apple.com/us/artist/spencer-holland/1766686134" target="_blank" rel="noopener" class="stream-btn">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12 12-5.383 12-12S18.617 0 12 0zM16.5 9.124h-4.048v6.526c0 1.246-.897 2.256-2.002 2.256-1.106 0-2.003-1.01-2.003-2.256s.897-2.256 2.003-2.256c.378 0 .73.111 1.051.296V7.122l5.002-1.124v3.126z"/>
+          </svg>
+          Apple Music
+        </a>
+
+        <!-- Tidal -->
+        <a href="https://tidal.com/artist/50248024" target="_blank" rel="noopener" class="stream-btn">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.012 3.992L8.008 7.996 4.004 3.992 0 7.996l4.004 4.004 4.004-4.004 4.004 4.004 4.004-4.004-4.004-4.004zM8.008 12l-4.004 4.004L0 12l4.004 4.004zM12.012 12l4.004 4.004L20.02 12l-4.004-4.004zM16.016 7.996l4.004-4.004L24 7.996l-4.004 4.004z"/>
+          </svg>
+          Tidal
+        </a>
+
+        <!-- YouTube Music -->
+        <a href="https://music.youtube.com/channel/UCpxgi5xmA4selmEZej2U3pA" target="_blank" rel="noopener" class="stream-btn">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
+          </svg>
+          YouTube
+        </a>
+
+        <!-- Amazon Music -->
+        <a href="https://music.amazon.com/artists/B09JQ4G7Q7/spencer-holland" target="_blank" rel="noopener" class="stream-btn">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.958 10.09c0 1.232.029 2.256-.591 3.351-.502.891-1.301 1.438-2.186 1.438-1.214 0-1.922-.924-1.922-2.292 0-2.692 2.415-3.182 4.7-3.182v.685zm3.186 7.705c-.209.189-.512.201-.745.074-1.052-.872-1.238-1.276-1.814-2.106-1.734 1.767-2.962 2.297-5.209 2.297-2.66 0-4.731-1.641-4.731-4.925 0-2.565 1.391-4.309 3.37-5.164 1.715-.754 4.11-.891 5.942-1.097v-.41c0-.753.06-1.642-.383-2.294-.385-.579-1.124-.82-1.775-.82-1.205 0-2.277.618-2.54 1.897-.054.285-.261.567-.547.582l-3.065-.331c-.259-.058-.548-.266-.472-.66.704-3.716 4.06-4.836 7.067-4.836 1.537 0 3.546.41 4.758 1.574 1.538 1.436 1.392 3.352 1.392 5.438v4.923c0 1.481.615 2.13 1.192 2.929.204.287.249.63-.01.839-.647.541-1.794 1.537-2.425 2.096l-.006-.007zm3.559 1.951c-2.748 1.472-5.735 2.181-8.453 2.181-4.027 0-7.927-1.393-11.081-3.706-.277-.202-.481.154-.251.416 2.925 3.326 6.786 5.326 11.032 5.326 3.268 0 7.029-1.175 9.563-3.421.378-.323.064-.795-.31-.596zm1.445-1.683c-.19-.242-.578-.208-.948.006-.237.116-.73.443-.73.443-.297.17-.618.285-.841.146-.222-.138-.257-.406-.257-.406-.066-.553.052-1.033.052-1.033.126-.579.476-1.395.476-1.395.408-.748.949-1.19.949-1.19.318-.264.596-.397.712-.449.095-.043.183-.064.264-.074.228-.028.398.02.398.02.226.082.295.247.295.247.108.307.054.559.054.559"/>
+          </svg>
+          Amazon
+        </a>
+
+        <!-- Pandora -->
+        <a href="https://www.pandora.com/artist/spencer-holland/AR7nwKcxdw2cP24" target="_blank" rel="noopener" class="stream-btn">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 24V0h9.515c5.832 0 9.799 3.728 9.799 9.572 0 5.52-4.016 9.036-9.732 9.036H5.616V24zm5.616-9.797h3.899c2.423 0 4.09-1.619 4.09-4.631 0-2.916-1.601-4.752-4.252-4.752H5.616z"/>
+          </svg>
+          Pandora
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p class="footer-copyright">© 2026 Spencer Holland. All rights reserved.</p>
+    <p class="footer-credit">Original Website Design By Tim Nye</p>
+    <div class="footer-links">
+      <a href="https://www.tiktok.com/@itspencerholland?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.29 6.29 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.89a8.16 8.16 0 004.79 1.53V7a4.85 4.85 0 01-1.02-.31z"/>
+        </svg>
+      </a>
+      <a href="https://www.instagram.com/itspencerholland/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+        </svg>
+      </a>
+      <a href="mailto:spencerhollandmusic@gmail.com" class="footer-email">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+        spencerhollandmusic@gmail.com
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>

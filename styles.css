@@ -1,0 +1,693 @@
+/* =========================================
+   Spencer Holland Music - Main Stylesheet
+   ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+
+/* ---- Reset & Base ---- */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ---- Navigation ---- */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 45px 22% 0;
+  height: 110px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+}
+
+.nav-left {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+
+.nav-right {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+
+.nav-logo {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+nav a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.9);
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+/* ---- Footer ---- */
+footer {
+  background-color: #0a0a0a;
+  padding: 24px 40px;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.footer-copyright {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.45);
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.footer-credit {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: rgba(255,255,255,0.6);
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.88rem;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+.footer-links svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.footer-email {
+  font-size: 0.88rem;
+}
+
+/* ========================================
+   HOMEPAGE STYLES
+   ======================================== */
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center top;
+  z-index: 0;
+}
+
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, 
+    rgba(10,10,10,0.4) 0%, 
+    rgba(10,10,10,0) 25%, 
+    rgba(10,10,10,0) 75%, 
+    #0a0a0a 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: 8%;
+  text-align: right;
+  padding: 0 40px;
+  transform: translateY(120px);
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3.5rem, 8vw, 6rem);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 28px;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+
+.btn-listen {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(255,255,255,0.7);
+  border-radius: 30px;
+  padding: 10px 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(4px);
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.btn-listen:hover {
+  background: rgba(255,255,255,0.18);
+  border-color: rgba(255,255,255,0.9);
+}
+
+.btn-listen svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+/* Music Section (homepage) */
+.section-music {
+  padding: 80px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.music-embeds {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 36px;
+}
+
+.spotify-embed {
+  background: #111111;
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 280px;
+}
+
+.spotify-embed iframe {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.btn-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 4px;
+  padding: 10px 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: transparent;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.btn-more:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.7);
+}
+
+.btn-more svg {
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+/* About Section (homepage) */
+.section-about-home {
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.about-home-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('images/about-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.about-home-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+}
+
+.about-home-content {
+  position: relative;
+  z-index: 1;
+  max-width: 360px;
+  padding: 80px 60px;
+}
+
+.about-home-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.about-home-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 28px;
+}
+
+.btn-readmore {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(255,255,255,0.55);
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: transparent;
+  transition: background 0.2s;
+}
+
+.btn-readmore:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.btn-readmore svg {
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+/* ========================================
+   SUB-PAGE STYLES (music, shows, merch, about)
+   ======================================== */
+
+.page-hero {
+  position: relative;
+  height: 100vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.page-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('images/sub-page-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.page-hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, 
+    rgba(10,10,10,0.4) 0%, 
+    rgba(10,10,10,0) 25%, 
+    rgba(10,10,10,0) 75%, 
+    #0a0a0a 100%
+  );
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 0 40px;
+  width: 100%;
+  transform: translateY(80px);
+}
+
+.page-hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 400;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0 2px 30px rgba(0,0,0,0.4);
+}
+
+/* Glass card for Music page */
+.glass-card {
+  background: rgba(30, 30, 35, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 16px;
+  padding: 50px 60px;
+  max-width: 700px;
+  width: 90%;
+  text-align: center;
+}
+
+/* Music page full-page layout */
+.music-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.music-page-hero {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 80px 40px 60px;
+}
+
+.music-page-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('images/sub-page-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.music-page-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.5) 100%);
+}
+
+.music-page-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 400;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0 2px 30px rgba(0,0,0,0.4);
+  margin-bottom: 16px;
+}
+
+.music-page-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.85);
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+/* Streaming buttons */
+.streaming-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.stream-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 30px;
+  padding: 10px 22px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+}
+
+.stream-btn:hover {
+  background: rgba(255,255,255,0.15);
+  border-color: rgba(255,255,255,0.45);
+  transform: translateY(-1px);
+}
+
+.stream-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+/* Shows page - "check back soon" text */
+.shows-message {
+  font-size: 1.25rem;
+  color: rgba(255,255,255,0.7);
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* Merch "coming soon" text */
+.merch-coming-soon {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-top: 30px;
+  color: rgba(255,255,255,0.9);
+}
+
+.merch-subtitle {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.6);
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+/* About page content section */
+.about-content-section {
+  padding: 80px 40px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.about-section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.about-body-text {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: rgba(255,255,255,0.78);
+  margin-bottom: 16px;
+}
+
+.btn-checkitout {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 4px;
+  padding: 10px 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: transparent;
+  margin-top: 20px;
+  transition: background 0.2s;
+}
+
+.btn-checkitout:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+/* Divider line */
+.divider {
+  width: 60px;
+  height: 1px;
+  background: rgba(255,255,255,0.2);
+  margin: 48px 0;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+  nav {
+    padding: 25px 20px 0;
+    height: 90px;
+  }
+
+  .nav-logo {
+    font-size: 1.6rem;
+  }
+
+  .nav-left, .nav-right {
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+
+  .hero-bg {
+    background-position: 15% center;
+  }
+
+  .hero-content {
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 60px;
+    text-align: center;
+  }
+
+  .music-embeds {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 15px;
+    padding: 0 5px 15px;
+    margin: 0 -15px; /* Offset parent padding for full-bleed feel */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+  }
+
+  .music-embeds::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome/Safari */
+  }
+
+  .music-embeds > div {
+    flex: 0 0 85%; /* Each player takes 85% of screen width */
+    scroll-snap-align: center;
+    min-width: 280px;
+  }
+
+  .music-embeds iframe {
+    height: 380px !important; /* Bring back more height for usability */
+    border-radius: 12px;
+  }
+
+  .section-music {
+    padding: 60px 20px 40px;
+  }
+
+  .glass-card {
+    padding: 36px 30px;
+  }
+
+  .streaming-buttons {
+    gap: 10px;
+  }
+
+  .about-content-section {
+    padding: 60px 28px;
+  }
+
+  .about-home-content {
+    padding: 60px 28px;
+    max-width: 100%;
+  }
+
+  footer {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .music-page-title,
+  .page-hero-title {
+    letter-spacing: 4px;
+    font-size: 2rem;
+  }
+}
