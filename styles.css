@@ -718,3 +718,40 @@ footer {
     font-size: 2rem;
   }
 }
+
+/* Booking Link Section */
+.booking-container {
+  margin-top: 48px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.book-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: #0a0a0a;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.book-btn:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+.book-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  margin-right: 10px;
+}

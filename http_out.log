@@ -1,0 +1,30 @@
+Starting up http-server, serving .
+
+http-server version: 14.1.1
+
+http-server settings: 
+CORS: disabled
+Cache: 3600 seconds
+Connection Timeout: 120 seconds
+Directory Listings: visible
+AutoIndex: visible
+Serve GZIP Files: false
+Serve Brotli Files: false
+Default File Extension: none
+
+Available on:
+  http://10.0.0.24:3000
+  http://127.0.0.1:3000
+Hit CTRL-C to stop the server
+
+[2026-04-19T06:52:20.873Z]  "GET /music.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-19T06:52:20.888Z]  "GET /styles.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-19T06:52:21.000Z]  "GET /images/sub-page-bg.jpg" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-19T06:52:21.023Z]  "GET /favicon.ico" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-19T06:52:21.025Z]  "GET /favicon.ico" Error (404): "Not found"
+[2026-04-19T06:54:37.049Z]  "GET /music.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0"
+[2026-04-19T06:54:37.180Z]  "GET /styles.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0"
+[2026-04-19T06:54:37.219Z]  "GET /images/sub-page-bg.jpg" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0"
+[2026-04-19T06:54:45.605Z]  "GET /shows.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0"
+[2026-04-19T06:55:13.145Z]  "GET /index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0"
+[2026-04-19T06:55:13.208Z]  "GET /images/hero-bg.jpg" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0"

@@ -1,0 +1,19 @@
+ INFO  Accepting connections at http://localhost:3000
+ HTTP  4/18/2026 11:48:16 PM ::1 GET /music.html
+ HTTP  4/18/2026 11:48:16 PM ::1 Returned 301 in 51 ms
+ HTTP  4/18/2026 11:48:16 PM ::1 GET /music
+ HTTP  4/18/2026 11:48:16 PM ::1 Returned 200 in 5 ms
+ HTTP  4/18/2026 11:48:16 PM ::1 GET /styles.css
+ HTTP  4/18/2026 11:48:16 PM ::1 Returned 200 in 2 ms
+ HTTP  4/18/2026 11:48:16 PM ::1 GET /images/sub-page-bg.jpg
+ HTTP  4/18/2026 11:48:16 PM ::1 Returned 200 in 5 ms
+ HTTP  4/18/2026 11:48:16 PM ::1 GET /favicon.ico
+ HTTP  4/18/2026 11:48:16 PM ::1 Returned 404 in 2 ms
+ HTTP  4/18/2026 11:48:54 PM 127.0.0.1 GET /
+ HTTP  4/18/2026 11:48:54 PM 127.0.0.1 Returned 200 in 2 ms
+ HTTP  4/18/2026 11:48:54 PM 127.0.0.1 GET /styles.css
+ HTTP  4/18/2026 11:48:54 PM 127.0.0.1 Returned 200 in 3 ms
+ HTTP  4/18/2026 11:48:54 PM 127.0.0.1 GET /images/hero-bg.jpg
+ HTTP  4/18/2026 11:48:54 PM 127.0.0.1 GET /images/sub-page-bg.jpg
+ HTTP  4/18/2026 11:48:54 PM 127.0.0.1 Returned 200 in 2 ms
+ HTTP  4/18/2026 11:48:54 PM 127.0.0.1 Returned 200 in 10 ms
